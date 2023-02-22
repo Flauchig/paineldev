@@ -1,0 +1,795 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans";
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgba(224, 222, 222, 0.692);
+}
+body {
+    overflow-x: hidden;
+}
+
+/* bootcss */
+
+.center {
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* box do formulario */
+/* pagina de login  */
+
+.box-login {
+    box-shadow: 10px 10px rgba(3, 3, 3, 0.7);
+    max-width: 600px;
+    width: 95%;
+    padding: 100px 5%;
+    background: rgb(109, 33, 33);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+}
+
+.box-login input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.box-login input[type="submit"] {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 100px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    background: rgb(64, 143, 68);
+    color: white;
+    border: none;
+}
+
+.form-group-login input[type = "checkbox"] {
+    height: 20px;
+    position: relative;
+   
+   
+}
+
+.form-group-login label{
+    position: relative;
+    color: white;
+    top: 40px;
+   
+    
+}
+
+/* box do formulario */
+
+/* logo */
+.logo-login img {
+    position: relative;
+    width: 350px;
+    padding-left: 60px;
+}
+
+/* logo */
+
+/* erro-box  */
+
+.erro-box {
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    background: rgb(221, 12, 12);
+    font-size: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.erro-box i {
+    padding: 0 5px;
+}
+
+/* erro-box */
+/* fim da pagina de login */
+
+/* menu */
+
+header {
+    position: relative;
+    left: 200px;
+    background: #424242;
+    width: calc(100% - 250px);
+    padding: 20px 0;
+}
+
+.loggout {
+    float: right;
+    padding: 0 15px;
+}
+
+.loggout a {
+    padding: 0 15px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.loggout span {
+    font-size: 25px;
+}
+/* menu */
+
+.box-usuario .avatar-usuario {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 0;
+}
+
+.avatar-usuario i {
+    font-size: 35px;
+    color: rgb(221, 218, 218);
+    margin-top: 30px;
+}
+
+.imagem-usuario {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.imagem-usuario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgb(236, 223, 223);
+}
+
+.nome-usuario {
+    text-align: center;
+}
+
+.nome-usuario p {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+div.menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    float: left;
+    background: #352e2e;
+    padding: 10px 0;
+    width: 180px;
+}
+.menu-wrapper {
+    width: 180px;
+    padding: 10px 0;
+}
+
+div.box-usuario {
+    text-align: center;
+    padding: 0;
+}
+.menu-btn {
+    display: block;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 25px;
+    float: left;
+}
+
+.itens-menu {
+    margin-top: 30px;
+}
+
+.itens-menu h2 {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 300;
+    background: rgb(24, 23, 23);
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.itens-menu a {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    font-weight: 400;
+    border-bottom: 2px solid rgb(92, 74, 74);
+    margin-top: 10px;
+}
+
+.itens-menu a:hover {
+    color: rgb(65, 224, 25);
+}
+
+/* menu */
+
+/* conteudo do painel   */
+
+.content {
+    width: calc(100% - 250px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+
+.box-content {
+    background: #352e2e;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: white;
+}
+
+/* conteudo do painel  */
+
+/* box-metricas */
+.box-metricas {
+    margin-top: 16px;
+    padding: 0 15px;
+    
+}
+.box-metrica-single {
+    float: left;
+    position: relative;
+    width: 33.3%;
+    background: #f4b033;
+    border: 3px solid rgb(56, 54, 54);
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 300px;
+    font-size: 15px;
+}
+
+.box-metricas,
+.box-metrica-single:nth-last-of-type(2) {
+    background: #e05c4e;
+}
+
+.box-metricas,
+.box-metrica-single:nth-last-of-type(1) {
+    background: #21d10a;
+}
+
+.box-metrica-wrapper {
+    padding: 10px 20px;
+    text-align: left;
+    color: white;
+}
+
+/* box-metricas */
+
+/* table-resposive */
+
+/* table-responsive */
+.table-responsive {
+    max-width: 1280px;
+    margin: 20px auto;
+}
+
+.table-responsive .row:nth-last-of-type(0) {
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 5px;
+}
+
+.table-responsive .row {
+    font-weight: 500;
+    color: rgb(12, 12, 12);
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.col {
+    float: left;
+    width: 50%;
+}
+/* editar usuario */
+
+.box-content form {
+    margin: 30px 0;
+    
+}
+
+.box-content form label {
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.box-content .form-group {
+    margin: 30px 0;
+    padding: 0 15px;
+    
+}
+
+.box-content form input[type="text"] {
+    position: relative;
+    padding: 0 15px;
+    border: 1px solid black;
+    font-weight: normal;
+    color: #352e2e;
+    width: 350px;
+    height: 35px;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.box-content form input[type="password"] {
+    position: relative;
+    padding: 0 15px;
+    border: 1px solid black;
+    font-weight: normal;
+    color: #352e2e;
+    width: 350px;
+    height: 35px;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.box-content form label.selecionar_img {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 45%;
+    left: 0;
+    bottom: 150px;
+    position: relative;
+    display: block;
+}
+.box-content form input[type="file"] {
+    font-size: 19px;
+    margin-bottom: 15px;
+    margin-left: 45%;
+    left: 0;
+    bottom: 150px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.box-content form textarea{
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: normal;
+    color: #352e2e;
+    width: 800px;
+    height: 200px;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: vertical;
+
+}
+
+
+.form-group select{
+    position: relative;
+    font-size: 15px;
+    bottom: 125px;
+}
+
+.titulo-cargos{
+    position: relative;
+    bottom: 125px;
+}
+
+
+.box-content form input[type = submit]{
+    font-size: 20px;
+    float: right;
+    padding: 8px;
+    border-radius: 15px;
+    background: #21d10a;
+    cursor: pointer;
+
+}
+/* editar-usuário  */
+.box-alert{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+.sucesso{
+    background: #00e676;
+    color: black; 
+
+}
+
+.erro{
+    background: rgb(221, 12, 12);
+    color: white;
+}
+
+/* box-alert */
+
+
+/* listar servicos */
+
+.wraper-table{
+    overflow-x: auto;
+}
+
+
+.box-content table{
+    margin: 18px 0;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 400px;
+ 
+
+}
+
+.box-content table tr{
+    border-bottom: 1px solid white;;
+}
+
+.box-content table tr:nth-of-type(1){
+    background: rgb(94, 85, 85);
+    border-radius: 25px;
+}
+
+.box-content table td{
+    padding: 10px ;
+}
+ table td .btn-edit{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: yellow;
+    font-size: 18px;
+    padding: 4px 6px;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border: 1px solid rgb(87, 85, 85) ;
+  
+    
+
+ }
+
+table td .btn-delete{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background:red;
+    font-size: 18px;
+    padding: 4px 6px;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border: 1px solid rgb(87, 85, 85) ;
+
+  
+ 
+
+
+}
+
+.paginacao{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.paginacao a{
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+    border: 1px solid rgb(236, 236, 236);
+    
+
+}
+
+.page-selected {
+    background: rgb(99, 66, 66);
+}
+
+
+
+
+/* listar servicos  */
+
+
+
+
+/* medias */
+
+@media screen and (max-width: 1440px) {
+    .box-metrica-single {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .box-metrica-single {
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .menu {
+        width: auto;
+        left: 0;
+        padding: 0;
+    }
+    .box-content .form-group {
+        width: 70%;
+        margin: 20px 0;
+       
+    }
+    .box-content form input[type="file"] {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-left: 0%;
+        left: 0;
+        bottom: 0px;
+        position: relative;
+        display: block;
+   
+    
+    
+    }
+
+    .box-content table {
+        width: 100%;
+        margin: 0;
+    }
+
+    
+.box-content form textarea{
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: normal;
+    color: #352e2e;
+    width: 100%;
+    height: 200px;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: vertical;
+
+}
+
+
+    .form-group select{
+      width: 70%;
+      margin: 20px 0;
+      position: relative;
+      display: block;
+      bottom: 0;
+    }
+    
+    .titulo-cargos{
+        width: 70%;
+        margin: 20px 0;
+        position: relative;
+        display: block;
+       bottom: 0;
+    }
+
+    
+.form-group-login input[type = "checkbox"] {
+    height: 20px;
+    position: relative;
+ 
+   
+   
+}
+
+.form-group-login label{
+    position: relative;
+    color: white;
+    top: 40px;
+   
+    
+}
+    
+
+
+    
+.box-content form input[type="text"] {
+    position: relative;
+    width: 100%;
+  
+}
+.box-content form input[type="password"] {
+    position: relative;
+    width: 100%;
+  
+}
+    .box-content form label.selecionar_img {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-left: 0;
+        left: 0;
+        bottom: 0px;
+        position: relative;
+        display: block;
+    }
+    .box-content form input[type = submit]{
+        font-size: 30px;
+        float: none;
+        padding: 8px;
+        border-radius: 15px;
+        background: #21d10a;
+        margin: 5px 0;
+    
+    }    
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header,
+    .content,
+    .menu {
+        width: auto;
+        left: 0;
+        padding: 0;
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    .content {
+        left: 250px;
+    }
+    .box-metrica-single {
+
+        width: 100%;
+        margin: 10px 10px;
+    }
+ 
+}
+
+
+
+
+
+
+.form-group-login input[type = "checkbox"] {
+    height: 20px;
+    position: relative;
+    left: 15px;
+   
+   
+}
+
+.form-group-login label{
+    position: relative;
+    color: white;
+    top: 40px;
+   
+    
+}
+
+@media screen and (max-width: 400px) {
+    .menu-wrapper {
+        width: 200px;
+    }
+
+       .box-content table {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .box-login input[type = submit]{
+        position: relative;
+        width: 50%;
+        margin-top: 35px;
+  
+        right: 25px;
+       
+        
+    }
+    .box-login img{
+        position: relative;
+        width: 100%;
+    right: 25px; 
+    }
+
+    header,
+    .content,
+    .menu {
+        width: auto;
+        left: 0;
+        padding: 0;
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    .content {
+        left: 250px;
+    }
+    .box-metrica-single {
+        width: 100%;
+        margin: 10px ;
+        right: 15px;
+    }
+
+    
+.form-group-login input[type = "checkbox"] {
+    height: 20px;
+    position: relative;
+    width: 50%;
+    left: 80px;
+   
+}
+
+.form-group-login label{
+    position: relative;
+    color: white;
+    top: 40px;
+    
+   
+    
+}
+
+
+    
+}
+
+/* medias */
